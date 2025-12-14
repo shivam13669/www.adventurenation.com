@@ -46,6 +46,206 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script>function triploader(i){$(".trip_loader1").css({display:"none"})}</script>
 <!--
 -->
+<style>
+.booknow-container-upcoming {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.booknow-container-upcoming:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.booknow-container-upcoming .BCU_A1 {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  background: #f0f0f0;
+}
+
+.booknow-container-upcoming .main-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.booknow-container-upcoming .book-upcoming-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  backdrop-filter: blur(4px);
+}
+
+.booknow-container-upcoming .booknow-heading {
+  display: block;
+  padding: 16px 16px 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+  line-height: 1.4;
+  min-height: 50px;
+  overflow: hidden;
+}
+
+.booknow-container-upcoming .booknow-heading:hover {
+  color: #e74c3c;
+}
+
+.duration-container {
+  padding: 0 16px 12px;
+  font-size: 14px;
+  color: #666;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.duration-container span:last-child {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.price-container-discount {
+  padding: 12px 16px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #999;
+}
+
+.price-container-discount .discount {
+  text-decoration: line-through;
+}
+
+.price-container-discount .amt-percent {
+  background-color: #fff4f1;
+  color: #e74c3c;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.price-container {
+  padding: 8px 16px 12px;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  font-weight: 600;
+}
+
+.price-container .rs {
+  font-size: 14px;
+  color: #2c3e50;
+}
+
+.price-container .amt {
+  font-size: 20px;
+  color: #e74c3c;
+}
+
+.price-container .per {
+  font-size: 12px;
+  color: #999;
+  margin-left: 4px;
+}
+
+.book-ANcash-container {
+  padding: 0 16px 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.ANcashTable {
+  width: 100%;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.ANcashTable tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ANcashTable td {
+  padding: 10px 12px;
+  font-size: 13px;
+  color: #2c3e50;
+}
+
+.ANcashTable td:first-child {
+  font-weight: 600;
+  background-color: #f9f9f9;
+  flex: 1;
+}
+
+.ANcashTable td:last-child {
+  font-weight: 600;
+  color: #e74c3c;
+  flex: 0 0 auto;
+}
+
+.book-link-container {
+  padding: 12px 16px;
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.book-link-container a {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.book-link-container .submit-query-link-modal {
+  background-color: #f5f5f5;
+  color: #2c3e50;
+  border: 1px solid #e0e0e0;
+}
+
+.book-link-container .submit-query-link-modal:hover {
+  background-color: #efefef;
+  border-color: #d0d0d0;
+}
+
+.book-link-container .submit-query-link {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.book-link-container .submit-query-link:hover {
+  background-color: #d94435;
+}
+
+.view-details-link {
+  display: inline-block !important;
+}
+</style>
 </head>
 <body>
 
