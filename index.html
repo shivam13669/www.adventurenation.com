@@ -244,6 +244,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .view-details-link {
   display: inline-block !important;
 }
+
+/* Disable all navigation and external links */
+a[href^="/trip/"],
+a[href^="/destination/"],
+a[href^="/activity/"],
+a[href^="/guru/"],
+a[href^="/group/"],
+a[href^="/packages/"],
+a[href^="/info/"],
+a[href*="adventurenation.com"],
+a[href*="bit.ly"],
+a[target="_blank"]:not([href*="javascript"]) {
+  pointer-events: none !important;
+  cursor: not-allowed !important;
+  opacity: 0.7;
+}
 </style>
 </head>
 <body>
